@@ -1,5 +1,4 @@
 var request = require('supertest-as-promised');
-var httpStatus = require('http-status');
 var chai = require('chai');
 var expect = chai.expect;
 var app = require('./index');
@@ -9,7 +8,7 @@ describe('Router stress test', function() {
         it('should not crash ' + i, function(done) {
             request(app)
             .put(`/mytestroute`)
-            .expect(httpStatus.OK)
+            .expect(200)
             .then(function() {
                 done();
             });

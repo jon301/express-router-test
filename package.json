@@ -15,7 +15,6 @@
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-mocha": "^3.0.1",
-    "http-status": "^0.2.3",
     "supertest": "^2.0.0",
     "supertest-as-promised": "^4.0.0"
   }
